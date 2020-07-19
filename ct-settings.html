@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Issue center</a>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Managers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="issues.html">
+                            Assets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests.html">
+                            Requests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests-history.html">
+                            Requests History
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests-view.html">
+                            Requests View
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hub-managers.html">
+                            Hub managers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hub-requests.html">
+                            Hub Requests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ct-assets.html">
+                            Crypto transactions assets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ct-settings.html">
+                            Crypto transactions settings
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="row pt-3 pb-2 mb-3 border-bottom">
+                <div class="col-6 col-md-8 col-sm-8 mb-2 mb-md-0">
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            <span class="font-weight-light">Account #:</span>
+                        </dt>
+                        <dd class='col-sm-10'>
+                            <span class="font-weight-bold">GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</span>
+                        </dd>
+                        <dt class="col-sm-2">
+                            <span class="font-weight-light">Key:</span>
+                        </dt>
+                        <dd class="col-sm-10">
+                            <span class="font-weight-bold">SA6HICCNPLQWD5VQQXTWXUWBRIPIQWTXIKNJAM5RTNRKMCSUM4XPOXVA</span>
+                        </dd>
+                        <dt class="col-sm-2">
+                            <span class="font-weight-light">Balance:</span>
+                        </dt>
+                        <dd class="col-sm-10">
+                            <span class="text-success font-weight-bold">0 XLM</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-6 col-md-4 col-sm-4 mb-2 mb-md-0">
+                    <dl class="row">
+                        <dt class="col-3">
+                            <span class="font-weight-light">Count request:</span>
+                        </dt>
+                        <dd>
+                            <span class="font-weight-bold">4</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-8">
+                    <h2>Setting options chain</h2>
+                    <p>This interface allows you to: generate new account for issue administrator, change account issue
+                        administrator, view account information.
+
+                        When generating a new record, data (automatically) will be substituted into the form fields and
+                        you only need to select it.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-2 mb-3">
+
+                <div class="col-8">
+                    <dl class="row col-8">
+                        <dt class="col-4">
+                            <span class="font-weight-light">Asset:</span>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="d-flex justify-content-between">
+                                <form class="w-100">
+                                    <div class="form-group mb-2 mr-1">
+                                        <select class="form-control" id="input1">
+                                            <option>
+                                                ROLD
+                                            </option>
+                                        </select>
+                                    </div>
+                                </form>
+                                <button type="submit" class="btn btn-success mb-2">Deposit</button>
+                            </div>
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Received volume:</span>
+                        </dt>
+                        <dd class="col-8 text-right">
+                            <span class="font-weight-bold">0</span>
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Volume in chains:</span>
+                        </dt>
+                        <dd class="col-8 text-right"><span class="font-weight-bold">0</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Freeze:</span>
+                        </dt>
+                        <dd class="col-8 text-right"><span class="text-primary font-weight-bold">0</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Available:</span>
+                        </dt>
+                        <dd class="col-8 text-right"><span class="text-danger font-weight-bold">0</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Purchased:</span>
+                        </dt>
+                        <dd class="col-8 text-right"><span class="text-success font-weight-bold">0</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Amount:</span>
+                        </dt>
+                        <dd class="col-8 text-right"><span class="font-weight-bold">0</span></dd>
+
+                        <dt class="col-4">
+                            <span class="font-weight-light">Asset:</span>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="d-flex justify-content-between">
+                                <form class="w-100">
+                                    <div class="form-group">
+                                        <select class="form-control" id="input1">
+                                            <option>
+                                                BTC
+                                            </option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">ID Asset chain:</span>
+                        </dt>
+                        <dd class="col-8">
+                            <div class="d-flex justify-content-between">
+                                <span>1G57C62</span>
+                                <button type="submit" class="btn btn-outline-success">Create</button>
+                            </div>
+                        </dd>
+
+                    </dl>
+
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-8">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="text-primary">FREEZE</h4>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-4">
+                            <span class="font-weight-light">Address:</span>
+                        </dt>
+                        <dd class="col-8">
+                            B6JLFSLDLSOFU4NMSRXA
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Key:</span>
+                        </dt>
+                        <dd class="col-8 text-right">
+                            <span class="font-weight-bold">SDGSOYGXQMBTB6JLFSLDLSOFU4NMSRXAF26E7H5HQIZQ5JDEWCTMZ2QQ</span>
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Balance native:</span>
+                        </dt>
+                        <dd class="col-8"><span class="font-weight-bold">123.0000000 BTC</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Balance asset:</span>
+                        </dt>
+                        <dd class="col-8"><span class="font-weight-bold">357.0000000 ROLD</span></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-8">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="text-danger">AVAILABLE</h4>
+                        <button type="submit" class="btn btn-danger">Create</button>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-4">
+                            <span class="font-weight-light">Address:</span>
+                        </dt>
+                        <dd class="col-8">
+                            B6JLFSLDLSOFU4NMSRXA
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Key:</span>
+                        </dt>
+                        <dd class="col-8 text-right">
+                            <span class="font-weight-bold">SDGSOYGXQMBTB6JLFSLDLSOFU4NMSRXAF26E7H5HQIZQ5JDEWCTMZ2QQ</span>
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Balance native:</span>
+                        </dt>
+                        <dd class="col-8"><span class="font-weight-bold">123.0000000 BTC</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Balance asset:</span>
+                        </dt>
+                        <dd class="col-8"><span class="font-weight-bold">357.0000000 ROLD</span></dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-8">
+                    <div class="d-flex justify-content-between">
+                        <h4 class="text-success">PURCHASED</h4>
+                        <button type="submit" class="btn btn-success">Create</button>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-4">
+                            <span class="font-weight-light">Address:</span>
+                        </dt>
+                        <dd class="col-8">
+                            B6JLFSLDLSOFU4NMSRXA
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Key:</span>
+                        </dt>
+                        <dd class="col-8 text-right">
+                            <span class="font-weight-bold">SDGSOYGXQMBTB6JLFSLDLSOFU4NMSRXAF26E7H5HQIZQ5JDEWCTMZ2QQ</span>
+                        </dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Balance native:</span>
+                        </dt>
+                        <dd class="col-8"><span class="font-weight-bold">123.0000000 BTC</span></dd>
+                        <dt class="col-4">
+                            <span class="font-weight-light">Balance asset:</span>
+                        </dt>
+                        <dd class="col-8"><span class="font-weight-bold">357.0000000 ROLD</span></dd>
+                    </dl>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</div>
+</body>
+</html>

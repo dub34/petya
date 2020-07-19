@@ -48,6 +48,36 @@
                             Requests
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests-history.html">
+                            Requests History
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests-view.html">
+                            Requests View
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hub-managers.html">
+                            Hub managers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hub-requests.html">
+                            Hub Requests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ct-assets.html">
+                            Crypto transactions assets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ct-settings.html">
+                            Crypto transactions settings
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -88,7 +118,7 @@
                 </div>
             </div>
             <div class="row pt-3 pb-2 mb-3">
-                <div class="col-12">
+                <div class="col-8">
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                         <h2>Manager issue center</h2>
                         <div class="btn-toolbar mb-2 mb-md-0">
@@ -97,8 +127,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
+
                     <p>
                         This interface allows you to: generate new account for issue administrator, change account issue
                         administrator, view account information.
@@ -117,76 +146,80 @@
                 </div>
             </div>
             <div class="row pt-3 pb-2 mb-3">
-                <div class="col-12">
+                <div class="col-8">
                     <h2>Change manager issue center</h2>
 
                     <dl class="row">
-                        <dt class="col-3">
+                        <dt class="col-4">
                             <span class="font-weight-light">Account:</span>
                         </dt>
                         <dd class="col-8">
-                            <form class="form-inline">
-                                <div class="form-group mb-2 mr-1">
-                                    <select class="form-control" id="input2">
-                                        <option selected
-                                                value="GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO">
-                                            GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO
-                                        </option>
-                                    </select>
-                                </div>
+
+                            <div class="d-flex justify-content-between">
+                                <form class="w-100">
+                                    <div class="form-group mb-2 mr-1">
+                                        <select class="form-control" id="input1">
+                                            <option>
+                                                GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO
+                                            </option>
+                                        </select>
+                                    </div>
+                                </form>
                                 <button type="submit" class="btn btn-warning mb-2">Change</button>
-                            </form>
+                            </div>
                         </dd>
 
-                        <dt class="col-3">
+                        <dt class="col-4">
                             <span class="font-weight-light">Key:</span>
                         </dt>
                         <dd class="col-8">
                             <span class="font-weight-bold">GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</span>
                         </dd>
-                        <dt class="col-3">
+                        <dt class="col-4">
                             <span class="font-weight-light">Balance:</span>
                         </dt>
                         <dd class="col-8"><span class="text-success font-weight-bold">0 XLM</span></dd>
-                        <dt class="col-3">
+                        <dt class="col-4">
                             <span class="font-weight-light">Volume:</span>
                         </dt>
                         <dd class="col-8">
-                            <form class="form-inline">
-                                <div class="form-group mb-2 mr-1">
-                                    <input type="text" class="form-control" id="input1" placeholder="volume">
-                                </div>
+
+                            <div class="d-flex justify-content-between">
+                                <form class="w-100">
+                                    <div class="form-group mb-2 mr-1">
+                                        <input type="text" class="form-control" id="input1" placeholder="volume">
+                                    </div>
+                                </form>
                                 <button type="submit" class="btn btn-success mb-2">Request</button>
-                            </form>
+                            </div>
+
                         </dd>
                     </dl>
                 </div>
             </div>
             <div class="row pt-3 pb-2 mb-3">
-                <div class="col-12">
+                <div class="col-8">
                     <h2>List of issue center managers</h2>
-                    <div class="row">
-                        <div class="col-8">
-                            <table class="table">
-                                <thead class="thead-dark">
-                                <tr>
-                                    <th>Account</th>
-                                    <th>Balance</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
-                                    <td>10 560 XLM</td>
-                                </tr>
-                                <tr>
-                                    <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
-                                    <td>10 560 XLM</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Account</th>
+                            <th>Balance</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
+                            <td>10 560 XLM</td>
+                        </tr>
+                        <tr>
+                            <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
+                            <td>10 560 XLM</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </main>

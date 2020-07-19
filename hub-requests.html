@@ -119,65 +119,118 @@
             </div>
             <div class="row pt-3 pb-2 mb-3">
                 <div class="col-8">
-                    <h2>Assets</h2>
-                    <p>This interface allows you to: create a new symbolic code of asset for which the issue will be
-                        carried out.</p>
-                    <p>This code must consist of any characters of set [az] [AZ] [0-9].</p>
-                    <p>The length must not exceed 12 characters.</p>
-                    <p>If an emission of an asset has occurred, it cannot be removed from the list.</p>
+                    <h2>REQUESTS</h2>
+                    <p>Processing requests for the supply of volumes of native asset (XLM) to pay for transactions in
+                        Stellar network by managers of Issuing Center and Treasury.
+                    </p>
+                    <p>
+                        The volumes of native asset (XLM) go to accounts of managers of Issuing Center and Treasury.
+                    </p>
+                </div>
+            </div>
 
-                    <form class="w-100">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <div class="form-group mb-2 mr-2">
-                                <span class="font-weight-light">Add new asset</span>
-                            </div>
-                            <div class="form-group mb-2 mr-2">
-                                <input type="text" class="form-control" id="input1" placeholder="Asset">
-                            </div>
-                            <button type="submit" class="btn btn-success mb-2">Add</button>
-                        </div>
-                    </form>
+            <div class="row pb-2 mb-3">
+                <div class="col-8">
+                    <dl class="row pb-2 mb-3">
+                        <dt class="col-2">
+                            <span class="font-weight-light">ID Request:</span>
+                        </dt>
+                        <dd class="col-10">
 
+                            <form>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <select class="form-control col-4 mr-5" id="input7">
+                                        <option selected value="">12334556987</option>
+                                    </select>
+                                    <div>
+                                        Process: <input type="checkbox">
+                                    </div>
+                                </div>
+                            </form>
+                           
+                        </dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Account:</span>
+                        </dt>
+                        <dd class="col-10">
+                            <span class="font-weight-bold">SDHWSISJED4DYYZPYK6AAFVRL3M5EOY5B64SSHPTHY7ADQDEE7M3M743</span>
+                        </dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Balance:</span>
+                        </dt>
+                        <dd class="col-10"><span class="font-weight-bold">10 000 XLM</span></dd>
+
+                        <dt class="col-2">
+                            <span class="font-weight-light">Request:</span>
+                        </dt>
+                        <dd class="col-10"><span class="font-weight-bold">2 000 XLM</span></dd>
+
+                        <dt class="col-2">
+                            <span class="font-weight-light">Volume:</span>
+                        </dt>
+                        <dd class="col-10">
+
+                            <form>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <input class="form-control col-4 mr-5" id="input7" type="text">
+                                    <div>
+                                        <button type="submit" class="btn btn-sm btn-success mb-2 mr-2">Send</button>
+                                        <button type="submit" class="btn btn-sm btn-danger mb-2 mr-2">Reject</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Comment:</span>
+                        </dt>
+                        <dd class="col-10">
+                            <form>
+                                <div class="form-group mb-2 mr-1">
+                                    <textarea class="form-control" id="input1" placeholder="Comment"></textarea>
+                                </div>
+                            </form>
+                        </dd>
+                    </dl>
                 </div>
             </div>
 
             <div class="row pt-3 pb-2 mb-3">
                 <div class="col-8">
-                    <h2>List of assets</h2>
+                    <h2>LIST OF REQUESTS</h2>
                     <table class="table">
                         <thead class="thead-dark">
                         <tr>
-                            <th>Asset</th>
-                            <th>Issue volume</th>
-                            <th>Treasury limit</th>
-                            <th>Issued volume</th>
-                            <th>Pending volume</th>
-                            <th>Not issued volume</th>
-                            <th>Not limit</th>
+                            <th>ID</th>
+                            <th>Account</th>
+                            <th>Request</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>RSSD</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>0</td>
+                            <td>1</td>
+                            <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                            <td>2 000 XLM</td>
                         </tr>
                         <tr>
-                            <td>DDAX</td>
-                            <td>1 000 000 000</td>
-                            <td>500 000 000</td>
-                            <td>0</td>
-                            <td>1 000 000 000</td>
-                            <td>1 000 000 000</td>
-                            <td>500 000 000</td>
+                            <td>1</td>
+                            <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                            <td>2 000 XLM</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                            <td>2 000 XLM</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                            <td>2 000 XLM</td>
                         </tr>
 
                         </tbody>
                     </table>
+
                 </div>
             </div>
         </main>
