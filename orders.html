@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Issue center</a>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Managers
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="issues.html">
+                            Assets
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders.html">
+                            Orders
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders-issue.html">
+                            Order issue
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders-issue-view.html">
+                            Order issue view
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests.html">
+                            Requests
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+            <div class="row pt-3 pb-2 mb-3 border-bottom">
+                <div class="col-6 col-md-8 col-sm-8 mb-2 mb-md-0">
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            <span class="font-weight-light">Account #:</span>
+                        </dt>
+                        <dd class='col-sm-10'>
+                            <span class="font-weight-bold">GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</span>
+                        </dd>
+                        <dt class="col-sm-2">
+                            <span class="font-weight-light">Key:</span>
+                        </dt>
+                        <dd class="col-sm-10">
+                            <span class="font-weight-bold">SA6HICCNPLQWD5VQQXTWXUWBRIPIQWTXIKNJAM5RTNRKMCSUM4XPOXVA</span>
+                        </dd>
+                        <dt class="col-sm-2">
+                            <span class="font-weight-light">Balance:</span>
+                        </dt>
+                        <dd class="col-sm-10">
+                            <span class="text-success font-weight-bold">0 XLM</span>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-6 col-md-4 col-sm-4 mb-2 mb-md-0">
+                    <dl class="row">
+                        <dt class="col-3">
+                            <span class="font-weight-light">Count request:</span>
+                        </dt>
+                        <dd>
+                            <span class="font-weight-bold">4</span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-12">
+                    <h2>Issue orders</h2>
+                    <p>This interface allows manager of Issue center to manage issue orders: view existing issue orders,
+                        create new order, issue to Treasury accounts, and close issue.</p>
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-12">
+                    <h2>New Issue order</h2>
+                    <div class="row pt-3 pb-2 mb-3">
+                        <div class="col-6">
+                            <form>
+                                <div class="form-group row mb-2">
+                                    <label for="input1" class="col-3 col-form-label">
+                                        <span class="font-weight-light">Asset</span>
+                                    </label>
+                                    <div class="col">
+                                        <select class="form-control" id="input1">
+                                            <option value="ROLD" selected>ROLD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-2">
+                                    <label for="input1" class="col-3 col-form-label">
+                                        <span class="font-weight-light">Volume issue</span>
+                                    </label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" id="input2" value="5 000 000 000 ">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success mb-2">Add</button>
+                            </form>
+                        </div>
+
+                        <dl class="row col-6">
+                            <dt class="col-sm-4">
+                                <span class="font-weight-light">Current issue volume:</span>
+                            </dt>
+                            <dd class="col-sm-8">
+                                <span class="font-weight-bold">15 000 000 000</span>
+                            </dd>
+                            <dt class="col-sm-4">
+                                <span class="font-weight-light">Current Treasury limit:</span>
+                            </dt>
+                            <dd class="col-sm-8">
+                                <span class="font-weight-bold">12 000 000 000</span>
+                            </dd>
+                            <dt class="col-sm-4">
+                                <span class="font-weight-light">Issued volume:</span>
+                            </dt>
+                            <dd class="col-sm-8">
+                                <span class="font-weight-bold">7 000 000 000</span>
+                            </dd>
+                            <dt class="col-sm-4">
+                                <span class="font-weight-light">Pending volume:</span>
+                            </dt>
+                            <dd class="col-sm-8">
+                                <span class=" font-weight-bold">0</span>
+                            </dd>
+                            <dt class="col-sm-4">
+                                <span class="font-weight-light">Not issued volume:</span>
+                            </dt>
+                            <dd class="col-sm-8">
+                                <span class="font-weight-bold">5 000 000 000</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-12">
+                    <h2>Current issue order</h2>
+                    <dl class="row pb-2 mb-3">
+                        <dt class="col-2">
+                            <span class="font-weight-light">Order #:</span>
+                        </dt>
+                        <dd class="col-10">
+                            <form>
+                                <select class="form-control" id="input7">
+                                    <option selected
+                                            value="GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO">
+                                        GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO
+                                    </option>
+                                </select>
+                            </form>
+                        </dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Key:</span>
+                        </dt>
+                        <dd class="col-10">
+                            <span class="font-weight-bold">GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</span>
+                        </dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Balance:</span>
+                        </dt>
+                        <dd class="col-10"><span class="text-success font-weight-bold">0 XLM</span></dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Status:</span>
+                        </dt>
+                        <dd class="col-10"><span class="text-danger font-weight-bold">CLOSED</span></dd>
+                        <dt class="col-2">
+                            <span class="font-weight-light">Volume:</span>
+                        </dt>
+                        <dd class="col-10">
+                            <form class="form-inline">
+                                <div class="form-group mb-2 mr-1">
+                                    <input type="text" class="form-control" id="input1" placeholder="volume">
+                                </div>
+                                <button type="submit" class="btn btn-success mb-2 mr-2">Deposit</button>
+                                <button type="submit" class="btn btn-danger mb-2">Withdraw</button>
+                            </form>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="d-flex justify-content-start pb-2 mb-3">
+                    <div class="col-4">
+                        <dl class="row">
+                            <dt class="col-6">
+                                <span class="font-weight-light">Asset:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-primary">ROLD</span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light">Issue volume:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold">5 000 000 000 </span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light">Treasury limit:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold">5 000 000 000 </span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light">Issued volume::</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold">5 000 000 000 </span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light">Pending volume:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold">0</span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light">Not issued volume:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-danger">0</span>
+                            </dd>
+                        </dl>
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-sm btn-warning w-100 mb-2 mr-2">Issue</button>
+                            <button type="submit" class="btn btn-sm btn-primary w-100 mb-2">View</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <dl class="row">
+                            <dt class="col-6">
+                                <span class="font-weight-bold text-primary">TOTAL:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-primary">&nbsp;</span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light text-primary">Issue volume:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-primary">15 000 000 000 </span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light text-primary">Treasury limit:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-primary">12 000 000 000 </span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light text-primary">Issued volume::</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-primary">7 000 000 000 </span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light text-primary">Pending volume:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-primary">0</span>
+                            </dd>
+                            <dt class="col-6">
+                                <span class="font-weight-light text-primary">Not issued volume:</span>
+                            </dt>
+                            <dd class="col-6 text-right">
+                                <span class="font-weight-bold text-danger">5 000 000 000</span>
+                            </dd>
+                        </dl>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-sm btn-danger w-50 mb-2">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-12">
+                    <h2>List of issue orders</h2>
+                    <div class="row pt-3 pb-2 mb-3">
+                        <div class="col-12">
+                            <form class="form-inline">
+                                <div class="form-group mb-2 mr-2">
+                                    FILTERS:
+                                </div>
+                                <div class="form-group mb-2">
+                                    <span class="mr-2">Asset</span>
+                                    <select class="form-control-sm" id="input4">
+                                        <option value="all" selected>All</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <span class="mr-2">Status</span>
+                                    <select class="form-control-sm" id="input5">
+                                        <option value="all" selected>All</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <span class="mr-2">Not issued</span>
+                                    <select class="form-control-sm" id="input6">
+                                        <option value="all" selected>> 0</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th>Orders</th>
+                                    <th>Status</th>
+                                    <th>Assets</th>
+                                    <th>Issue</th>
+                                    <th>Limit</th>
+                                    <th>Issued</th>
+                                    <th>Pending</th>
+                                    <th>Not issued</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                                    <td>Active</td>
+                                    <td>RSSD</td>
+                                    <td>20 000 000 000</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                                    <td>Active</td>
+                                    <td>RSSD</td>
+                                    <td>20 000 000 000</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>GDYFHNM2UEK6O4ER6TBB7T7FZGEEDVSJTT2DY7XRPEOHOI7AAGOPX36X</td>
+                                    <td>Active</td>
+                                    <td>RSSD</td>
+                                    <td>20 000 000 000</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+</body>
+</html>

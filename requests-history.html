@@ -44,8 +44,28 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="orders-issue.html">
+                            Order issue
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orders-issue-view.html">
+                            Order issue view
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="requests.html">
                             Requests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests-history.html">
+                            Requests history
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="requests-view.html">
+                            Request View
                         </a>
                     </li>
                 </ul>
@@ -89,99 +109,87 @@
             </div>
             <div class="row pt-3 pb-2 mb-3">
                 <div class="col-12">
-                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h2>Manager issue center</h2>
-                        <div class="btn-toolbar mb-2 mb-md-0">
-                            <div class="btn-group mr-2">
-                                <button class="btn btn-success">Create</button>
-                            </div>
-                        </div>
+                    <h2>History Transactions</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum. </p>
+                </div>
+            </div>
+            <div class="row pt-3 pb-2 mb-3">
+                <div class="col-12">
+
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-light btn-outline-secondary">Response</button>
+                        <button type="button" class="btn btn-success">History</button>
                     </div>
                 </div>
-                <div class="col-12">
-                    <p>
-                        This interface allows you to: generate new account for issue administrator, change account issue
-                        administrator, view account information.
-                    </p>
-
-                    <p>When generating a new record, data (automatically) will be substituted into the form fields and
-                        you
-                        only
-                        need to select it.</p>
-
-                    <p> Existing administrator accounts can be selected from drop-down list.
-                        When choosing account, information in header should be updated.
-                        From certain issue administrator account on this form, I will carry out operations in issue
-                        center.
-                    </p>
-                </div>
             </div>
+
             <div class="row pt-3 pb-2 mb-3">
                 <div class="col-12">
-                    <h2>Change manager issue center</h2>
-
-                    <dl class="row">
-                        <dt class="col-3">
-                            <span class="font-weight-light">Account:</span>
-                        </dt>
-                        <dd class="col-8">
+                    <h2>List of requests</h2>
+                    <div class="row pt-3 pb-2 mb-3">
+                        <div class="col-12">
                             <form class="form-inline">
-                                <div class="form-group mb-2 mr-1">
-                                    <select class="form-control" id="input2">
-                                        <option selected
-                                                value="GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO">
-                                            GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO
-                                        </option>
+                                <div class="form-group mb-2 mr-2">
+                                    FILTERS:
+                                </div>
+                                <div class="form-group mb-2">
+                                    <span class="mr-2">Asset</span>
+                                    <select class="form-control-sm" id="input4">
+                                        <option value="all" selected>All</option>
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-warning mb-2">Change</button>
-                            </form>
-                        </dd>
-
-                        <dt class="col-3">
-                            <span class="font-weight-light">Key:</span>
-                        </dt>
-                        <dd class="col-8">
-                            <span class="font-weight-bold">GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</span>
-                        </dd>
-                        <dt class="col-3">
-                            <span class="font-weight-light">Balance:</span>
-                        </dt>
-                        <dd class="col-8"><span class="text-success font-weight-bold">0 XLM</span></dd>
-                        <dt class="col-3">
-                            <span class="font-weight-light">Volume:</span>
-                        </dt>
-                        <dd class="col-8">
-                            <form class="form-inline">
-                                <div class="form-group mb-2 mr-1">
-                                    <input type="text" class="form-control" id="input1" placeholder="volume">
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <span class="mr-2">Status</span>
+                                    <select class="form-control-sm" id="input5">
+                                        <option value="all" selected>All</option>
+                                    </select>
                                 </div>
-                                <button type="submit" class="btn btn-success mb-2">Request</button>
+                                <div class="form-group mx-sm-3 mb-2">
+                                    <span class="mr-2">Not issued</span>
+                                    <select class="form-control-sm" id="input6">
+                                        <option value="all" selected>> 0</option>
+                                    </select>
+                                </div>
                             </form>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row pt-3 pb-2 mb-3">
-                <div class="col-12">
-                    <h2>List of issue center managers</h2>
+                        </div>
+                    </div>
+
                     <div class="row">
-                        <div class="col-8">
+                        <div class="col-12">
                             <table class="table">
                                 <thead class="thead-dark">
                                 <tr>
-                                    <th>Account</th>
-                                    <th>Balance</th>
+                                    <th>ID</th>
+                                    <th>Assets</th>
+                                    <th>Limits</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
-                                    <td>10 560 XLM</td>
+                                    <td>123456781234</td>
+                                    <td>Asset 1</td>
+                                    <td>14 520 035</td>
                                 </tr>
                                 <tr>
-                                    <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
-                                    <td>10 560 XLM</td>
+                                    <td>123456781234</td>
+                                    <td>Asset 2</td>
+                                    <td>14 520 035</td>
+                                </tr>
+                                <tr>
+                                    <td>123456781234</td>
+                                    <td>Asset 3</td>
+                                    <td>14 520 035</td>
+                                </tr>
+                                <tr>
+                                    <td>123456781234</td>
+                                    <td>Asset 4</td>
+                                    <td>14 520 035</td>
                                 </tr>
                                 </tbody>
                             </table>

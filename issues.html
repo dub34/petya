@@ -89,100 +89,62 @@
             </div>
             <div class="row pt-3 pb-2 mb-3">
                 <div class="col-12">
-                    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <h2>Manager issue center</h2>
-                        <div class="btn-toolbar mb-2 mb-md-0">
-                            <div class="btn-group mr-2">
-                                <button class="btn btn-success">Create</button>
-                            </div>
+                    <h2>Assets</h2>
+                    <p>This interface allows you to: create a new symbolic code of asset for which the issue will be
+                        carried out.</p>
+                    <p>This code must consist of any characters of set [az] [AZ] [0-9].</p>
+                    <p>The length must not exceed 12 characters.</p>
+                    <p>If an emission of an asset has occurred, it cannot be removed from the list.</p>
+
+                    <form class="form-inline">
+                        <div class="form-group mb-2 mr-2">
+                            <span class="font-weight-light">Add new asset</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <p>
-                        This interface allows you to: generate new account for issue administrator, change account issue
-                        administrator, view account information.
-                    </p>
-
-                    <p>When generating a new record, data (automatically) will be substituted into the form fields and
-                        you
-                        only
-                        need to select it.</p>
-
-                    <p> Existing administrator accounts can be selected from drop-down list.
-                        When choosing account, information in header should be updated.
-                        From certain issue administrator account on this form, I will carry out operations in issue
-                        center.
-                    </p>
+                        <div class="form-group mb-2 mr-2">
+                            <input type="text" class="form-control" id="input1" placeholder="Asset">
+                        </div>
+                        <button type="submit" class="btn btn-success mb-2">Add</button>
+                    </form>
                 </div>
             </div>
+
             <div class="row pt-3 pb-2 mb-3">
                 <div class="col-12">
-                    <h2>Change manager issue center</h2>
-
-                    <dl class="row">
-                        <dt class="col-3">
-                            <span class="font-weight-light">Account:</span>
-                        </dt>
-                        <dd class="col-8">
-                            <form class="form-inline">
-                                <div class="form-group mb-2 mr-1">
-                                    <select class="form-control" id="input2">
-                                        <option selected
-                                                value="GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO">
-                                            GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO
-                                        </option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-warning mb-2">Change</button>
-                            </form>
-                        </dd>
-
-                        <dt class="col-3">
-                            <span class="font-weight-light">Key:</span>
-                        </dt>
-                        <dd class="col-8">
-                            <span class="font-weight-bold">GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</span>
-                        </dd>
-                        <dt class="col-3">
-                            <span class="font-weight-light">Balance:</span>
-                        </dt>
-                        <dd class="col-8"><span class="text-success font-weight-bold">0 XLM</span></dd>
-                        <dt class="col-3">
-                            <span class="font-weight-light">Volume:</span>
-                        </dt>
-                        <dd class="col-8">
-                            <form class="form-inline">
-                                <div class="form-group mb-2 mr-1">
-                                    <input type="text" class="form-control" id="input1" placeholder="volume">
-                                </div>
-                                <button type="submit" class="btn btn-success mb-2">Request</button>
-                            </form>
-                        </dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row pt-3 pb-2 mb-3">
-                <div class="col-12">
-                    <h2>List of issue center managers</h2>
+                    <h2>List of assets</h2>
                     <div class="row">
                         <div class="col-8">
                             <table class="table">
                                 <thead class="thead-dark">
                                 <tr>
-                                    <th>Account</th>
-                                    <th>Balance</th>
+                                    <th>Asset</th>
+                                    <th>Issue volume</th>
+                                    <th>Treasury limit</th>
+                                    <th>Issued volume</th>
+                                    <th>Pending volume</th>
+                                    <th>Not issued volume</th>
+                                    <th>Not limit</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
-                                    <td>10 560 XLM</td>
+                                    <td>RSSD</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
                                 </tr>
                                 <tr>
-                                    <td>GBZ43O5JFSDDSGLV5WHVF2A6K5ELSTMCDJUFI6DL6JAXTF6CE5BWMSJO</td>
-                                    <td>10 560 XLM</td>
+                                    <td>DDAX</td>
+                                    <td>1 000 000 000</td>
+                                    <td>500 000 000</td>
+                                    <td>0</td>
+                                    <td>1 000 000 000</td>
+                                    <td>1 000 000 000</td>
+                                    <td>500 000 000</td>
                                 </tr>
+
                                 </tbody>
                             </table>
                         </div>
